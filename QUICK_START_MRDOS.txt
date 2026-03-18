@@ -1,0 +1,221 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                    ☠️ MrDos Attacked v2.0 - QUICK START ☠️                   ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+⚠️  AUTHORIZED USE ONLY - I HAVE PERMISSION TO PERFORM THIS PENTEST ⚠️
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 1: RUN THE TOOL (Choose one method)
+═══════════════════════════════════════════════════════════════════════════════
+
+METHOD A - Main Launcher (RECOMMENDED):
+────────────────────────────────────────
+python3 /home/user/mrdos_attacked.py 192.168.1.1
+
+METHOD B - Bash Launcher:
+─────────────────────────
+./launch_pentest.sh 192.168.1.1
+
+METHOD C - Individual Terminals:
+────────────────────────────────
+# Terminal 1: Nmap
+python3 /home/user/terminal1_nmap.py 192.168.1.1 &
+
+# Terminal 2: SQL Injection
+python3 /home/user/terminal2_sql.py 192.168.1.1 &
+
+# Terminal 3: RCE
+python3 /home/user/terminal3_rce.py 192.168.1.1 &
+
+# Terminal 4: SSRF
+python3 /home/user/terminal4_ssrf.py 192.168.1.1 &
+
+# Terminal 5: API/XSS
+python3 /home/user/terminal5_api_xss.py 192.168.1.1 &
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 2: ACCESS THE WEB DASHBOARD
+═══════════════════════════════════════════════════════════════════════════════
+
+After running the tool, open your browser:
+
+🌐 WEB DASHBOARD URL: http://localhost:8888
+
+The dashboard shows:
+✓ Real-time terminal status (all 5 terminals)
+✓ Live vulnerability discoveries
+✓ Auto-refresh every 5 seconds
+✓ Severity levels (Critical/High/Medium/Low)
+✓ Evidence and payloads for each finding
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 3: MONITOR TERMINALS
+═══════════════════════════════════════════════════════════════════════════════
+
+5 Terminals will open automatically:
+
+Terminal 1 (T1): NMAP SCANNER
+  - Quick scan (top 1000 ports)
+  - Full scan (all 65535 ports)
+  - Vulnerability scan (NSE scripts)
+
+Terminal 2 (T2): SQL INJECTION
+  - Manual SQLi testing
+  - SQLMap automation
+  - Database extraction
+
+Terminal 3 (T3): RCE TESTING
+  - Command injection
+  - Web shell detection
+  - System info extraction
+
+Terminal 4 (T4): SSRF TESTING
+  - Cloud metadata (AWS/GCP/Azure)
+  - Internal IP access
+  - File wrapper tests
+
+Terminal 5 (T5): API & XSS
+  - API endpoint discovery
+  - Directory fuzzing
+  - XSS testing
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 4: VIEW RESULTS
+═══════════════════════════════════════════════════════════════════════════════
+
+Results are saved in: /tmp/mrdos_<target>/
+
+JSON Results (for parsing):
+  /tmp/mrdos_<target>/results/nmap_scan.json
+  /tmp/mrdos_<target>/results/sqli_scan.json
+  /tmp/mrdos_<target>/results/rce_scan.json
+  /tmp/mrdos_<target>/results/ssrf_scan.json
+  /tmp/mrdos_<target>/results/api_xss_scan.json
+
+Terminal Logs (full output):
+  /tmp/mrdos_<target>/logs/terminal_1.log
+  /tmp/mrdos_<target>/logs/terminal_2.log
+  /tmp/mrdos_<target>/logs/terminal_3.log
+  /tmp/mrdos_<target>/logs/terminal_4.log
+  /tmp/mrdos_<target>/logs/terminal_5.log
+
+HTML Reports:
+  /tmp/mrdos_<target>/web/index.html
+  /tmp/mrdos_<target>/web/final_report.html
+
+═══════════════════════════════════════════════════════════════════════════════
+STEP 5: MONITORING COMMANDS
+═══════════════════════════════════════════════════════════════════════════════
+
+# Watch all terminals in real-time
+tail -f /tmp/mrdos_*/logs/terminal_*.log
+
+# Watch specific terminal
+tail -f /tmp/mrdos_192_168_1_1/logs/terminal_1.log
+
+# Auto-refresh results directory
+watch -n 5 'ls -la /tmp/mrdos_*/results/'
+
+# Check running processes
+ps aux | grep -E "nmap|sqlmap|python.*terminal"
+
+# View formatted JSON
+cat /tmp/mrdos_*/results/nmap_scan.json | python3 -m json.tool
+
+# Open dashboard in browser
+firefox http://localhost:8888 &
+# OR
+chromium http://localhost:8888 &
+
+═══════════════════════════════════════════════════════════════════════════════
+                         WORKFLOW EXAMPLE
+═══════════════════════════════════════════════════════════════════════════════
+
+# 1. Open Kali terminal
+
+# 2. Run the tool
+python3 /home/user/mrdos_attacked.py 192.168.1.100
+
+# 3. Wait for 5-second authorization countdown
+#    (Press Ctrl+C to cancel if no permission)
+
+# 4. Browser opens automatically to:
+#    http://localhost:8888
+
+# 5. 5 Terminals open automatically:
+#    - Terminal 1: Nmap scanning
+#    - Terminal 2: SQL injection testing
+#    - Terminal 3: RCE testing
+#    - Terminal 4: SSRF testing
+#    - Terminal 5: API/XSS testing
+
+# 6. Watch dashboard for real-time results
+#    (Auto-refreshes every 5 seconds)
+
+# 7. Check terminal logs for details:
+tail -f /tmp/mrdos_192_168_1_100/logs/terminal_*.log
+
+# 8. View final results:
+ls -la /tmp/mrdos_192_168_1_100/results/
+
+# 9. Open final report in browser:
+firefox /tmp/mrdos_192_168_1_100/web/final_report.html
+
+═══════════════════════════════════════════════════════════════════════════════
+                         TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════
+
+PROBLEM: "command not found: python3"
+SOLUTION: Install Python 3
+  apt update && apt install python3 -y
+
+PROBLEM: "No module named 'requests'"
+SOLUTION: Install Python modules
+  pip3 install requests python-nmap --break-system-packages
+
+PROBLEM: "sqlmap: command not found"
+SOLUTION: Install SQLMap
+  apt install sqlmap -y
+
+PROBLEM: "Could not open terminal"
+SOLUTION: Install terminal emulator
+  apt install gnome-terminal -y
+  # OR
+  apt install xfce4-terminal -y
+
+PROBLEM: "Permission denied"
+SOLUTION: Make executable
+  chmod +x /home/user/*.py
+
+PROBLEM: "Nmap requires root"
+SOLUTION: Run with sudo
+  sudo python3 /home/user/mrdos_attacked.py <target>
+
+PROBLEM: "Port 8888 already in use"
+SOLUTION: Change port in script or kill process
+  lsof -ti:8888 | xargs kill -9
+
+PROBLEM: Dashboard not opening
+SOLUTION: Open manually
+  firefox http://localhost:8888 &
+
+================================================================================
+                         SUPPORT FILES
+================================================================================
+
+All files created:
+  /home/user/mrdos_attacked.py          - Main launcher
+  /home/user/terminal1_nmap.py          - Nmap module
+  /home/user/terminal2_sql.py           - SQLi module
+  /home/user/terminal3_rce.py           - RCE module
+  /home/user/terminal4_ssrf.py          - SSRF module
+  /home/user/terminal5_api_xss.py       - API/XSS module
+  /home/user/launch_pentest.sh          - Bash launcher
+  /home/user/README_MRDOS_ATTACKED.txt - Full documentation
+  /home/user/QUICK_START_MRDOS.txt       - Quick reference
+
+================================================================================
+                              END
+================================================================================

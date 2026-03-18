@@ -1,0 +1,239 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                    ☠️ MrDos Attacked - WORKFLOW VISUAL ☠️                    ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+⚠️  AUTHORIZED PENETRATION TESTING ONLY - I HAVE PERMISSION ⚠️
+
+═══════════════════════════════════════════════════════════════════════════════
+                    COMPLETE WORKFLOW DIAGRAM
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STEP 1: RUN COMMAND                                                        │
+│  ═══════════════════                                                        │
+│                                                                             │
+│  $ python3 mrdos_attacked.py 192.168.1.100                                  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STEP 2: AUTHORIZATION COUNTDOWN                                          │
+│  ═════════════════════════════════                                          │
+│                                                                             │
+│  ⚠️ WARNING: This tool is for authorized security testing only!          │
+│                                                                             │
+│  By using this tool, you confirm that:                                     │
+│  ✓ You have explicit written permission to test the target               │
+│  ✓ You are the owner of the target system, OR                             │
+│  ✓ You have a signed contract/authorization for penetration testing      │
+│                                                                             │
+│  Starting in 5... 4... 3... 2... 1...                                      │
+│                                                                             │
+│  (Press Ctrl+C to cancel)                                                  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STEP 3: WEB DASHBOARD STARTS                                              │
+│  ═══════════════════════════                                               │
+│                                                                             │
+│  🌐 DASHBOARD URL: http://localhost:8888                                   │
+│                                                                             │
+│  Dashboard Features:                                                       │
+│  ✓ Real-time terminal status (all 5 terminals)                          │
+│  ✓ Live vulnerability discoveries                                          │
+│  ✓ Auto-refresh every 5 seconds                                          │
+│  ✓ Severity levels (Critical/High/Medium/Low)                           │
+│  ✓ Evidence and payloads for each finding                               │
+│                                                                             │
+│  Browser opens automatically!                                              │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STEP 4: 5 TERMINALS OPEN AUTOMATICALLY                                    │
+│  ═════════════════════════════════════                                     │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐  │
+│  │ TERMINAL 1: ☠️ NMAP SCANNER ☠️                                      │  │
+│  │ ═══════════════════════════                                        │  │
+│  │ • Quick Scan: Top 1000 ports                                       │  │
+│  │ • Full Scan: All 65535 ports                                       │  │
+│  │ • Vuln Scan: NSE scripts                                           │  │
+│  │ • OS Detection & Services                                          │  │
+│  └─────────────────────────────────────────────────────────────────────┘  │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐  │
+│  │ TERMINAL 2: ☠️ SQL INJECTION ☠️                                    │  │
+│  │ ═══════════════════════════════                                    │  │
+│  │ • 20+ SQLi payloads                                                │  │
+│  │ • SQLMap automation                                                │  │
+│  │ • Database extraction                                              │  │
+│  │ • MySQL/MSSQL/PostgreSQL/Oracle                                    │  │
+│  └─────────────────────────────────────────────────────────────────────┘  │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐  │
+│  │ TERMINAL 3: ☠️ RCE TESTING ☠️                                      │  │
+│  │ ═══════════════════════════                                        │  │
+│  │ • Command injection                                                │  │
+│  │ • Web shell detection                                              │  │
+│  │ • System info extraction                                           │  │
+│  │ • Critical severity alerts                                         │  │
+│  └─────────────────────────────────────────────────────────────────────┘  │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐  │
+│  │ TERMINAL 4: ☠️ SSRF TESTING ☠️                                      │  │
+│  │ ═══════════════════════════                                        │  │
+│  │ • Cloud metadata (AWS/GCP/Azure)                                   │  │
+│  │ • Internal IP access                                                 │  │
+│  │ • File wrapper tests                                               │  │
+│  │ • Protocol bypasses                                                  │  │
+│  └─────────────────────────────────────────────────────────────────────┘  │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐  │
+│  │ TERMINAL 5: ☠️ API & XSS ☠️                                        │  │
+│  │ ═════════════════════════                                          │  │
+│  │ • API endpoint discovery                                           │  │
+│  │ • Directory fuzzing                                                │  │
+│  │ • XSS testing                                                      │  │
+│  │ • IDOR/BOLA testing                                                │  │
+│  └─────────────────────────────────────────────────────────────────────┘  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STEP 5: VIEW RESULTS                                                      │
+│  ════════════════════                                                      │
+│                                                                             │
+│  Results saved in: /tmp/mrdos_<target>/                                    │
+│                                                                             │
+│  📊 Web Dashboard: http://localhost:8888                                   │
+│      - Real-time results                                                    │
+│      - Auto-refresh every 5 seconds                                         │
+│      - Vulnerability severity levels                                        │
+│      - Terminal status                                                      │
+│                                                                             │
+│  📁 JSON Results: /tmp/mrdos_<target>/results/                             │
+│      - nmap_scan.json      (Port scan results)                              │
+│      - sqli_scan.json      (SQL injection findings)                         │
+│      - rce_scan.json       (RCE vulnerabilities)                            │
+│      - ssrf_scan.json      (SSRF test results)                              │
+│      - api_xss_scan.json   (API endpoints & XSS)                            │
+│                                                                             │
+│  📝 Terminal Logs: /tmp/mrdos_<target>/logs/                               │
+│      - terminal_1.log      (Nmap output)                                    │
+│      - terminal_2.log      (SQLi testing)                                   │
+│      - terminal_3.log      (RCE testing)                                    │
+│      - terminal_4.log      (SSRF testing)                                   │
+│      - terminal_5.log      (API/XSS testing)                                │
+│                                                                             │
+│  🌐 HTML Reports: /tmp/mrdos_<target>/web/                                 │
+│      - index.html          (Live dashboard)                                   │
+│      - final_report.html   (Complete report)                                │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+                                    │
+                                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  STEP 6: MONITORING COMMANDS                                               │
+│  ═══════════════════════════                                               │
+│                                                                             │
+│  # Watch all terminals in real-time                                        │
+│  tail -f /tmp/mrdos_*/logs/terminal_*.log                                  │
+│                                                                             │
+│  # Watch specific terminal                                                  │
+│  tail -f /tmp/mrdos_192_168_1_100/logs/terminal_1.log                      │
+│                                                                             │
+│  # Auto-refresh results directory                                          │
+│  watch -n 5 'ls -la /tmp/mrdos_*/results/'                                 │
+│                                                                             │
+│  # Check running processes                                                  │
+│  ps aux | grep -E "nmap|sqlmap|python.*terminal"                           │
+│                                                                             │
+│  # View formatted JSON                                                      │
+│  cat /tmp/mrdos_*/results/nmap_scan.json | python3 -m json.tool            │
+│                                                                             │
+│  # Open dashboard in browser                                                │
+│  firefox http://localhost:8888 &                                             │
+│  # OR                                                                       │
+│  chromium http://localhost:8888 &                                            │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+                         COMPLETE FILE LIST
+═══════════════════════════════════════════════════════════════════════════════
+
+Location: /home/user/
+
+Main Files:
+  ☠️  mrdos_attacked.py          - Main launcher with web dashboard
+  🔍 terminal1_nmap.py           - T1: Nmap scanner (3 phases)
+  💉 terminal2_sql.py            - T2: SQL Injection + SQLMap
+  ⚡ terminal3_rce.py             - T3: RCE / Command Injection
+  🌐 terminal4_ssrf.py            - T4: SSRF / Cloud Metadata
+  🔌 terminal5_api_xss.py         - T5: API Discovery + XSS
+  🚀 launch_pentest.sh            - Alternative bash launcher
+
+Documentation:
+  📖 README_MRDOS_ATTACKED.txt   - Complete documentation
+  📋 QUICK_START_MRDOS.txt       - Quick reference guide
+  📊 WORKFLOW_VISUAL.txt          - Visual workflow diagram
+
+═══════════════════════════════════════════════════════════════════════════════
+                              EXAMPLE RUN
+═══════════════════════════════════════════════════════════════════════════════
+
+$ python3 /home/user/mrdos_attacked.py 192.168.1.100
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║   ███╗   ███╗██████╗ ██████╗  ██████╗ ███████╗                             ║
+║   ████╗ ████║██╔══██╗██╔══██╗██╔═══██╗██╔════╝                             ║
+║   ██╔████╔██║██████╔╝██║  ██║██║   ██║███████╗                             ║
+║   ██║╚██╔╝██║██╔══██╗██║  ██║██║   ██║╚════██║                             ║
+║   ██║ ╚═╝ ██║██║  ██║██████╔╝╚██████╔╝███████║                             ║
+║   ╚═╝     ╚═╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝                             ║
+║                                                                              ║
+║                    PENETRATION TESTING FRAMEWORK v2.0                        ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+⚠️  AUTHORIZATION CHECK
+⚠️  This tool is for authorized security testing only!
+
+By using this tool, you confirm that:
+✓ You have explicit written permission to test the target
+✓ You are the owner of the target system, OR
+✓ You have a signed contract/authorization for penetration testing
+
+Starting in 5... 4... 3... 2... 1...
+
+[+] Web Dashboard started: http://localhost:8888
+[+] Terminal 1 launched: T1: NMAP SCANNER
+[+] Terminal 2 launched: T2: SQL INJECTION
+[+] Terminal 3 launched: T3: RCE TESTING
+[+] Terminal 4 launched: T4: SSRF TESTING
+[+] Terminal 5 launched: T5: API & XSS
+
+═══════════════════════════════════════════════════════════════════════════════
+All 5 terminals launched!
+═══════════════════════════════════════════════════════════════════════════════
+
+Workspace: /tmp/mrdos_192_168_1_100
+Results: /tmp/mrdos_192_168_1_100/results/
+Logs: /tmp/mrdos_192_168_1_100/logs/
+Dashboard: http://localhost:8888
+
+Commands to monitor:
+  tail -f /tmp/mrdos_192_168_1_100/logs/terminal_*.log
+  watch -n 5 'ls -la /tmp/mrdos_192_168_1_100/results/'
+
+═══════════════════════════════════════════════════════════════════════════════
+
